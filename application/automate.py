@@ -4,13 +4,9 @@ from selenium.webdriver.common.keys import Keys
 from time import sleep
 from selenium.webdriver.edge.service import Service
 from pynput.keyboard import Key, Controller
-
-
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.edge.service import Service
-from time import sleep
 
 class TwitterBot:
     def __init__(self, driver_path):
@@ -75,7 +71,7 @@ class TwitterBot:
         sleep(3)
         add_photo_button = self.driver.find_element(By.XPATH, "//input[@data-testid='fileInput']")
         add_photo_button.send_keys(video_path)
-        sleep(160)
+        sleep(60)
         tweet_button = self.driver.find_element(By.XPATH, "//*[@id='react-root']/div/div/div[2]/main/div/div/div/div/div/div[3]/div/div[2]/div[1]/div/div/div/div[2]/div[2]/div[2]/div/div/div/button/div/span/span")
         tweet_button.click()
 
@@ -108,6 +104,6 @@ class TwitterBot:
         send_button = self.driver.find_element(By.XPATH, "//*[@id='react-root']/div/div/div[2]/main/div/div/div/div[2]/div/div/aside/div[2]/button/div")
         send_button.click()
 
-
-        
-
+    def quit(self):
+        if self.driver:
+            self.driver.quit()

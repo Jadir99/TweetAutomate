@@ -2,7 +2,7 @@ from automate import TwitterBot
 from time import sleep
 # Usage
 if __name__ == "__main__":
-    driver_path = 'C:\\Users\\hp\\Downloads\\edge_driver\\msedgedriver.exe'
+    driver_path = 'edge_driver\\msedgedriver.exe'
     bot = TwitterBot(driver_path)
     
     # Initialize WebDriver
@@ -44,4 +44,4 @@ if __name__ == "__main__":
     bot.chat("jadir999","salam si jadir cv hanya malin dar kchi mzn  ???")
     sleep(40)
     # Quit the driver
-    # bot.quit()
+    bot.quit()
