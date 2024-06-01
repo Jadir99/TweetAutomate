@@ -9,39 +9,39 @@ if __name__ == "__main__":
     bot.initialize_driver()
     
     # Login to Twitter
-    bot.login('jadir99', 'jadir99jadir99')
+    bot.login('username', 'password')
     sleep(5)
     # Follow a user
-    bot.follow('Cristiano')
+    bot.follow('username')
     sleep(4)
     # Unfollow a user
-    bot.unfollow('Cristiano')
+    bot.unfollow('username')
     
     sleep(4)
     # Post a tweet
-    bot.add_post('hellofrom medpy team ')
+    bot.add_post('hello from JADIR  team ')
     
     sleep(4)
     # Add a picture to a tweet
-    bot.add_pic('C:\\Users\\hp\\OneDrive\\Bureau\\advanced_python_project\\le projet\\application\\static\\imgs\\hackathon.jpg')
+    bot.add_pic('path of picture!!')
     
     sleep(4)
     # Add a video to a tweet
-    bot.add_video('C:\\Users\\hp\\OneDrive\\Bureau\\advanced_python_project\\le projet\\application\\static\\videos\\hackathon.mp4')
+    bot.add_video('path of video!!!!')
     
     sleep(4)
     # # Like a tweet
-    bot.like_tweet('AIDRIVR', '1794887169162850588')
+    bot.like_tweet('username', 'id of poste')
     
     sleep(4)
     # Share a tweet
-    bot.share_tweet('AIDRIVR', '1794887169162850588')
+    bot.share_tweet('username', 'id of poste')
 
     
     # sleep(40)
     sleep(5)
     #  chat 
-    bot.chat("jadir999","salam si jadir cv hanya malin dar kchi mzn  ???")
+    bot.chat("username","the message")
     sleep(40)
     # Quit the driver
     bot.quit()
